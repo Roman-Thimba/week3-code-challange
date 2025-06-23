@@ -1,0 +1,35 @@
+/* Reusable input style */
+.input {
+  @apply p-2 border rounded-md w-full ...;
+}
+
+/* Reusable button styles */
+.btn-primary {
+  @apply bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-md transition;
+}
+
+.btn-secondary {
+  @apply bg-gray-400 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded-md transition;
+}
+
+.btn-success {
+  @apply bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-md transition;
+}
+
+/* Hover effect for post items */
+.post-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Fade-in animation */
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
